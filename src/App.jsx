@@ -11,7 +11,7 @@ function App() {
         const {destination, source, draggableId} = result
         const listHolder = data[source.droppableId]
         console.log(destination.index)
-        let removedElement = listHolder.splice(destination.index, 0, listHolder.splice(source.index, 1)[0]);
+        listHolder.splice(destination.index, 0, listHolder.splice(source.index, 1)[0]);
 
     }
 
