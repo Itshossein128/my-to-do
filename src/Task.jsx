@@ -2,7 +2,6 @@ import {Draggable} from "react-beautiful-dnd";
 import DraggableTask from "./DraggableTask.jsx";
 
 function Task({id, title, index}) {
-    console.log(typeof(id))
     return (
         <Draggable draggableId={id} index={index}>
             {(provided) => {
